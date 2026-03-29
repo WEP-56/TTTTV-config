@@ -41,14 +41,6 @@
       "r18": false
     },
     {
-      "key": "api.guangsuapi.com",
-      "name": "🎬光速资源",
-      "api": "https://api.guangsuapi.com/api.php/provide/vod",
-      "detail": "https://api.guangsuapi.com",
-      "group": "影视",
-      "r18": false
-    },
-    {
       "key": "wolongzyw.com",
       "name": "🎬卧龙资源",
       "api": "https://wolongzyw.com/api.php/provide/vod",
@@ -61,14 +53,6 @@
       "name": "🎬如意资源",
       "api": "https://pz.168188.dpdns.org/?url=https://cj.rycjapi.com/api.php/provide/vod",
       "detail": "https://www.ryzyw.com",
-      "group": "影视",
-      "r18": false
-    },
-    {
-      "key": "kuaichezy.com",
-      "name": "🎬快车资源",
-      "api": "https://caiji.kuaichezy.org/api.php/provide/vod",
-      "detail": "https://kuaichezy.com",
       "group": "影视",
       "r18": false
     },
@@ -145,14 +129,6 @@
       "r18": false
     },
     {
-      "key": "yhzy.cc",
-      "name": "🎬樱花资源",
-      "api": "https://m3u8.apiyhzy.com/api.php/provide/vod",
-      "detail": "https://yhzy.cc",
-      "group": "影视",
-      "r18": false
-    },
-    {
       "key": "www.maoyanzy.com",
       "name": "🎬猫眼资源",
       "api": "https://api.maoyanapi.top/api.php/provide/vod",
@@ -161,26 +137,10 @@
       "r18": false
     },
     {
-      "key": "dyttzyapi.com",
-      "name": "🎬电影天堂",
-      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
-      "detail": "http://caiji.dyttzyapi.com",
-      "group": "影视",
-      "r18": false
-    },
-    {
       "key": "bdzy1.com",
       "name": "🎬百度云zy",
       "api": "https://pz.168188.dpdns.org/?url=https://api.apibdzy.com/api.php/provide/vod",
       "detail": "https://bdzy1.com",
-      "group": "影视",
-      "r18": false
-    },
-    {
-      "key": "suonizy.net",
-      "name": "🎬索尼资源",
-      "api": "https://suoniapi.com/api.php/provide/vod",
-      "detail": "https://suonizy.net",
       "group": "影视",
       "r18": false
     },
@@ -225,14 +185,6 @@
       "r18": false
     },
     {
-      "key": "www.haohuazy.com",
-      "name": "🎬豪华资源",
-      "api": "https://pz.168188.dpdns.org/?url=https://hhzyapi.com/api.php/provide/vod",
-      "detail": "https://www.haohuazy.com",
-      "group": "影视",
-      "r18": false
-    },
-    {
       "key": "www.subozy.com",
       "name": "🎬速播资源",
       "api": "https://subocaiji.com/api.php/provide/vod",
@@ -273,22 +225,6 @@
       "r18": false
     },
     {
-      "key": "shandianzy.com",
-      "name": "🎬闪电资源",
-      "api": "https://xsd.sdzyapi.com/api.php/provide/vod",
-      "detail": "https://shandianzy.com",
-      "group": "影视",
-      "r18": false
-    },
-    {
-      "key": "ffzyapi.com",
-      "name": "🎬非凡资源",
-      "api": "https://api.ffzyapi.com/api.php/provide/vod",
-      "detail": "https://cj.ffzyapi.com",
-      "group": "影视",
-      "r18": false
-    },
-    {
       "key": "p2100.net",
       "name": "🎬飘零资源",
       "api": "https://p2100.net/api.php/provide/vod",
@@ -309,14 +245,6 @@
       "name": "🎬魔都资源",
       "api": "https://www.mdzyapi.com/api.php/provide/vod",
       "detail": "https://www.moduzy.net",
-      "group": "影视",
-      "r18": false
-    },
-    {
-      "key": "yayazy3.com",
-      "name": "🎬鸭鸭资源",
-      "api": "https://cj.yayazy.net/api.php/provide/vod",
-      "detail": "https://yayazy3.com",
       "group": "影视",
       "r18": false
     },
@@ -349,14 +277,6 @@
       "name": "🔞-奥斯卡-",
       "api": "https://aosikazy.com/api.php/provide/vod",
       "detail": "https://aosikazy.com",
-      "group": "R18",
-      "r18": true
-    },
-    {
-      "key": "xzytv.com",
-      "name": "🔞-幸资源-",
-      "api": "https://xzybb2.com/api.php/provide/vod",
-      "detail": "https://xzytv.com",
       "group": "R18",
       "r18": true
     },
@@ -409,14 +329,6 @@
       "r18": true
     },
     {
-      "key": "siwazyw.tv",
-      "name": "🔞丝袜资源",
-      "api": "https://siwazyw.tv/api.php/provide/vod",
-      "detail": "https://siwazyw.tv",
-      "group": "R18",
-      "r18": true
-    },
-    {
       "key": "lbapi9.com",
       "name": "🔞乐播资源",
       "api": "https://lbapi9.com/api.php/provide/vod",
@@ -429,14 +341,6 @@
       "name": "🔞优优资源",
       "api": "https://www.yyzywcj.com/api.php/provide/vod",
       "detail": "https://www.yyzywcj.com",
-      "group": "R18",
-      "r18": true
-    },
-    {
-      "key": "dadizy11.com",
-      "name": "🔞大地资源",
-      "api": "https://dadiapi.com/feifei",
-      "detail": "https://dadizy11.com",
       "group": "R18",
       "r18": true
     },
@@ -541,14 +445,6 @@
       "name": "🔞色猫资源",
       "api": "https://caiji.semaozy.net/inc/apijson_vod.php/provide/vod",
       "detail": "https://semaozy1.com",
-      "group": "R18",
-      "r18": true
-    },
-    {
-      "key": "doudouzy.com",
-      "name": "🔞豆豆资源",
-      "api": "https://api.douapi.cc/api.php/provide/vod",
-      "detail": "https://doudouzy.com",
       "group": "R18",
       "r18": true
     },
