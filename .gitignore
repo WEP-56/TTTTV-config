@@ -1,2 +1,4 @@
 sources.api_site.json
 txt
+__pycache__/
+*.pyc
