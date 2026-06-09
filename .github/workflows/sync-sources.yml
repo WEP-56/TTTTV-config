@@ -25,11 +25,14 @@ jobs:
           python-version: "3.x"
 
       - name: Sync sources
-        run: python update_sources.py
+        run: python scripts/sync_all_sources.py --timeout 20 --retries 3 --max-age-days 45
+
+      - name: Verify sources
+        run: python scripts/verify_sources.py --timeout 20 --max-age-days 45
 
       - name: Commit and push
         run: |
-          if git diff --quiet -- sources.json; then
+          if git diff --quiet -- sources.json scripts; then
             echo "No changes to commit."
             exit 0
           fi

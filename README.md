@@ -29,3 +29,23 @@ Moovie 远程资源站配置仓库。
 ```
 
 R18 源请务必显式写：`"r18": true`，并建议 `group` 为 `"R18"`。
+
+## 维护脚本
+
+同步并验活新增普通影视源：
+
+```powershell
+python scripts\sync_all_sources.py --timeout 20 --retries 3 --max-age-days 45
+```
+
+生成健康报告：
+
+```powershell
+python scripts\check_sources.py --timeout 20 --retries 3 --concurrency 8 --max-age-days 45
+```
+
+快速验活当前 `sources.json`：
+
+```powershell
+python scripts\verify_sources.py --timeout 20 --max-age-days 45
+```

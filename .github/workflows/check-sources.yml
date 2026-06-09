@@ -1,0 +1,77 @@
+name: Check sources
+
+on:
+  schedule:
+    - cron: "0 17 * * *"
+  push:
+    paths:
+      - "sources.json"
+      - "scripts/**"
+      - ".github/workflows/check-sources.yml"
+  pull_request:
+    paths:
+      - "sources.json"
+      - "scripts/**"
+      - ".github/workflows/check-sources.yml"
+  workflow_dispatch:
+    inputs:
+      search_keyword:
+        description: "Keyword used to test source search"
+        default: ""
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: check-sources
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Check sources
+        run: |
+          KEYWORD="${{ github.event.inputs.search_keyword }}"
+          SEARCH_ARGS=()
+          if [ -n "$KEYWORD" ]; then
+            SEARCH_ARGS=(--search-keyword "$KEYWORD")
+          fi
+
+          python scripts/check_sources.py \
+            --timeout 20 \
+            --retries 3 \
+            --concurrency 8 \
+            --max-age-days 45 \
+            --allow-failures \
+            "${SEARCH_ARGS[@]}"
+
+      - name: Upload health reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-health
+          path: reports/
+
+      - name: Commit report
+        if: github.event_name != 'pull_request'
+        run: |
+          if git diff --quiet -- reports; then
+            echo "No report changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/
+          git commit -m "chore: update source health report"
+          git push
