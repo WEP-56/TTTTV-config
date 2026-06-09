@@ -1,6 +1,6 @@
 # TTTTV-config
 
-Moovie 远程资源站配置仓库。
+Moovie 远程资源站配置仓库。每日自动测活，请查看：[health daily](https://github.com/WEP-56/TTTTV-config/blob/main/reports/source-health.md)
 
 ## 入口文件（后端会依次尝试）
 
