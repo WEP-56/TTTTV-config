@@ -367,6 +367,14 @@
       "detail": "https://tyyszy.com",
       "group": "影视",
       "r18": false
+    },
+    {
+      "key": "apibdzy",
+      "name": "🎬百度云资源",
+      "api": "https://api.apibdzy.com/api.php/provide/vod",
+      "detail": "https://api.apibdzy.com",
+      "group": "影视",
+      "r18": false
     }
   ]
 }
